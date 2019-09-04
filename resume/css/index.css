@@ -1,6 +1,6 @@
 body{
     font-family:"Arial","Microsoft YaHei",'黑体','宋体',sans-serif ;
-    font-size: 1.5vw;
+    font-size: 16px;
     background: #f8f8f8;
     color: black;
     height: 100vh;
@@ -184,6 +184,7 @@ section#skills .wra{
     box-shadow: 0 0 20px;
     padding: 3vw 2vw;
     box-sizing: border-box;
+    font-size: 1.2vw;
 }
 section#skills .wra .pull{
     overflow: hidden;
