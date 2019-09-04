@@ -1,6 +1,6 @@
 body{
     font-family:"Arial","Microsoft YaHei",'黑体','宋体',sans-serif ;
-    font-size: 16px;
+    font-size: 1.5vw;
     background: #f8f8f8;
     color: black;
     height: 100vh;
@@ -60,7 +60,7 @@ section#home .jumbotron{
     text-align: center;
 }
 section#home .jumbotron .headerimg{
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 section#home .jumbotron .headerimg a{
     position: relative;
@@ -69,13 +69,13 @@ section#home .jumbotron .headerimg a{
 }
 section#home .jumbotron .headerimg a:before{
     content: "";
-    border: 15px solid rgba(206,174,170, 0.6);
+    border: 1.5rem solid rgba(206,174,170, 0.6);
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 18rem;
+    width: 18rem;
     position: absolute;
     left: 0;
-    top: -80px;
+    top: -8rem;
     animation: pulsate 1.6s ease-out infinite;
     opacity: 0.0;
     z-index: 99;
@@ -83,19 +83,19 @@ section#home .jumbotron .headerimg a:before{
 }
 @keyframes pulsate {
     from{
-        border: 15px solid rgba(55, 140, 63, 0.6);
+        border: 1.5rem solid rgba(55, 140, 63, 0.6);
     }
     to{
-        border: 30px solid rgba(55, 140, 63, 0.1);
+        border: 3rem solid rgba(55, 140, 63, 0.1);
     }
 }
 section#home .jumbotron .headerimg a img{
     border-radius: 50%;
     position: relative;
-    height: 180px;
-    width: 180px;
+    height: 18rem;
+    width: 18rem;
     padding: 0;
-    border: 15px solid transparent;
+    border: 1.5rem solid transparent;
     z-index: 9999;
     transition: all .3s ease-out;
 }
@@ -130,8 +130,8 @@ section#home .jumbotron .btn{
 
 /****************关于我******************/
 section .title{
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
 }
 section#about .flipper{
     width: 100%;
@@ -157,14 +157,14 @@ section#about .flipper .front{
     transform:rotateY(0) ;
 }
 section#about .flipper .front img{
-    height: 330px !important;
+    height: 33rem !important;
 }
 
 section#about .flipper .back{
     transform:rotateY(180deg) ;
 }
 section#about h4{
-    font-size: 25px;
+    font-size: 2rem;
     color: #146eb4;
 }
 section#about ul li{
@@ -177,14 +177,19 @@ section#about ul li{
 /****************技能******************/
 section#skills .wra{
     width: 100%;
-    height: 320px;
+    min-width: 350px;
+    height: 100%;
+    max-height: 550px;
     /*border: 1px solid #ccc;*/
     box-shadow: 0 0 20px;
-    padding: 30px 20px;
+    padding: 3vw 2vw;
     box-sizing: border-box;
 }
 section#skills .wra .pull{
     overflow: hidden;
+}
+section#skills .wra .progress{
+    height: 2vw;
 }
 section#skills .wra .progress-bar{
     transition: width 3s linear 0s;
@@ -204,7 +209,7 @@ section#projects{
     overflow: hidden;
 }
 section#projects .swiper-container{
-    width: 800px;
+    width: 65vw;
     overflow: visible;
 }
 section#projects .swiper-container .swiper-slide{
@@ -216,21 +221,21 @@ section#projects .swiper-container .swiper-slide-active{
     transform: scale(1);
 }
 section#projects img{
-    height: 320px;
-    border: 5px skyblue solid;
+    height: 100%;
+    border: 0.5rem skyblue solid;
     border-radius: 10%;
 }
 
 section#projects .swiper-container .swiper-slide .cover{
     position: absolute;
     left:5%;
-    top: 320px;
+    top: 100%;
     width: 90%;
     height: 90%;
     background-color: rgba(0,0,0,.6);
     border-radius: 10%;
     color: #ffffff;
-    font-size: 16px;
+    /*font-size: 16px;*/
 
 }
 section#projects .swiper-container .swiper-slide:hover .cover{
@@ -239,35 +244,35 @@ section#projects .swiper-container .swiper-slide:hover .cover{
 }
 @keyframes sport {
     from{
-        top: 320px;
+        top: 58%;
     }
     to{
         top: 5%;
     }
 }
 section#projects .swiper-container .swiper-slide .cover h4{
-    font-size: 25px;
+    font-size: 3rem;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5rem;
     color: #146eb4;
     font-weight: bolder;
 }
 section#projects .swiper-container .swiper-slide .cover ul{
-   padding-left:100px;
-    line-height: 30px;
+   padding-left:10rem;
+    line-height: 2;
 }
 section#projects .swiper-container .swiper-slide .cover ul i{
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 section#projects .swiper-container .swiper-slide .cover .btn{
-    margin-left: 100px;
+    margin-left: 10rem;
 }
 /****************项目******************/
 
 /****************经验******************/
 .swiper-container {
-    width: 650px;
-    height: 320px;
+    width: 55vw;
+    height: 57.5vh;
 }
 section#experience .swiper-container .swiper-slide{
     border: 1px solid #dedede;
@@ -275,31 +280,31 @@ section#experience .swiper-container .swiper-slide{
     padding: 1em 3em;
 }
 section#experience .swiper-container .swiper-slide:hover{
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 0.5rem;
 }
 section#experience .swiper-container h4{
-    font-size: 25px;
+    font-size: 2vw;
     color: #146eb4;
-    margin-left: 40px;
+    margin-left: 4vw;
 }
 section#experience .swiper-container h4 small{
     color: #000;
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 section#experience .swiper-container ul{
     color: #4a4a4a;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 1.1vw;
+    line-height: 4vh;
 }
 section#experience .swiper-container ul li i{
-    margin-right: 20px;
+    margin-right: 2vw;
     color: #3db444;
 }
 section#experience .swiper-container p{
     color: #7d3f98;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
-    margin-left: 42px;
+    margin-left: 4.2vw;
 }
 
 /****************经验******************/
@@ -308,13 +313,13 @@ section#experience .swiper-container p{
 section#contact{
     text-align: center;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 2rem;
     background: url("../images/bg.jpg") no-repeat center center/cover;
     background-attachment: fixed;
 }
 section#contact .midddle{
-    margin: 50px auto;
-    width: 240px;
+    margin: 5rem auto;
+    width: 24rem;
     text-align: left;
     line-height: 2.3;
 }
@@ -322,15 +327,15 @@ section#contact p{
    text-align: left;
 }
 section#contact i{
-    font-size: 30px;
+    font-size: 2rem;
     color: pink;
 }
 section#contact .icon img{
-    width: 50px;
+    width: 5rem;
 }
 
 section#contact .container>p:nth-child(2){
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
 }
 

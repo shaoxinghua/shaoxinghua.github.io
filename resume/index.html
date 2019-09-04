@@ -19,9 +19,17 @@
     <!--    导航-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="#home" style="color:#fff">个人简历</a></li>
-            </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color:#fff" href="#home">个人简历</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#home">主页</a></li>
                 <li><a href="#about">关于我</a></li>
@@ -30,6 +38,7 @@
                 <li><a href="#experience">经验</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
+        </div>
         </div>
     </nav>
     <!--    首页-->
@@ -46,14 +55,14 @@
         </div>
     </section>
     <!--    关于我-->
-    <section id="about">
+    <section id="about" class="hidden-xs">
            <h2 class="title">关于我</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="flipper">
                             <div class="front">
-                                <img src="images/mebg.jpg">
+                                <img src="images/mebg.jpg" class="img-responsive">
                             </div>
                             <div class="back">
                                 <h4>自我介绍</h4>
@@ -70,7 +79,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <h4>基本信息</h4>
                         <ul>
                             <li class="row">
@@ -115,7 +124,7 @@
         <div class="container">
             <div class="wra">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">html</span>
                             <span class="pull-right">90%</span>
@@ -125,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">css</span>
                             <span class="pull-right">85%</span>
@@ -135,9 +144,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">javascript</span>
                             <span class="pull-right">80%</span>
@@ -147,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">es6</span>
                             <span class="pull-right">80%</span>
@@ -157,9 +164,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">vue</span>
                             <span class="pull-right">75%</span>
@@ -169,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">jquery</span>
                             <span class="pull-right">70%</span>
@@ -179,9 +184,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">bootstrap</span>
                             <span class="pull-right">75%</span>
@@ -191,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div class="pull">
                             <span class="pull-left">git</span>
                             <span class="pull-right">70%</span>
@@ -203,7 +206,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!--    项目-->
